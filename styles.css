@@ -4,9 +4,56 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+/*Navigation*/
+.name{
+    font-size: 25px;
+}
 
 
+.navigation{
+    list-style-type: none;
+    float: right;
+}
 
+.nav-list{
+    float: left;
+}
+
+.nav-list a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+/*Main*/
+main{
+    width: 100vw;
+    height: 650px;
+    max-height: 700px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background:url(./assets/rm191-nu-08.jpg) no-repeat center center/cover;
+}
+
+.main-sec{
+   margin: 0;
+    
+}
+
+.main-name{
+    font-size: 100px;
+}
+
+.main-desc{
+    font-size: 50px;
+}
 
 /*projects*/
 .card-grid{
