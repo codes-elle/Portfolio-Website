@@ -72,3 +72,41 @@ main{
 /*SKILLS*/
 
 /*FEATURED PROJECTS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACT*/
+.contact-container{
+    margin: 50px;
+
+}
+
+form{
+    display: grid;
+    grid-template-columns: 2 1fr;
+    grid-gap: 5.5px;
+    width: 600px;
+}
+
+input{
+    height: 30px;
+    font-size: 15px;
+}
+
+input[type="submit"]{
+    color: green;
+}
