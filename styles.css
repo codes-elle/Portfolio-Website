@@ -4,9 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    overflow-x: hidden;
-}
 
 /*Navigation*/
 .name{
@@ -70,28 +67,76 @@ main{
 
 
 /*SKILLS*/
-
-/*FEATURED PROJECTS*/
-
-.card-container{
+.skillsContainer{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
 }
 
-.card-one{
+.technicalSkillsContainer{
     float: left;
     width: 50%;
 }
 
-.card-two{
+.technicalSkillsContainer > i{
+    animation: iconUpDown 5s infinite;
+}
+
+@keyframes iconUpDown{
+    0%{
+        transform: translateY(0%);
+    }
+    50%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+.softSkillsContainer{
     float: right;
     width: 50%;
 }
 
 
+/*FEATURED PROJECTS*/
 
 
 
+
+
+/*ABOUT ME*/
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 45px;
+
+}
+
+.about-left{
+    width: 50%;
+    float: left;
+    border: 2px solid pink;
+}
+
+.about-me-img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.about-right{
+    width: 50%;
+    float: right;
+    border: 2px solid plum;
+}
+
+.about-right > p{
+    text-align: center;
+}
 
 
 
@@ -119,4 +164,49 @@ input{
 
 input[type="submit"]{
     color: green;
+}
+
+
+/*Projects*/
+
+.carousel-container{
+    width:50%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 5%;
+    font-size: 30px;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 5%;
+    font-size: 30px;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 768px){
+   
 }
